@@ -1,0 +1,35 @@
+
+<div class="form-container">
+    <h1>Product View Table</h1>
+
+    <!-- Table to display product data -->
+    <table>
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Details</th>
+                <th>Product Category</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example data for products -->
+            <tr *ngFor="let p of product">
+                <td>{{p.pid}}</td>
+                <td>{{p.pname}}</td>
+                <td>{{p.pprice | currency:'INR'}}</td>
+                <td>{{p.pdetails}}</td>
+                <td>{{p.pcategory}}</td>
+                <td>
+                    <button type="button" class="btn btn-primary" (click)="update(p)">Update</button>
+                    <br>
+                    <button type="button" class="btn btn-danger" (click)="delete(p.pid)">Delete</button>
+
+                </td>
+            </tr>
+   
+        </tbody>
+    </table>
+</div>

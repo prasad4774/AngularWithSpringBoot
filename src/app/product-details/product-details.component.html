@@ -1,0 +1,39 @@
+
+<h2 style="background-color: black; color: aliceblue; text-align: center;"  >ANGUALE CRUD OPERATION  :- PRODUCT DETAILS SERVICE </h2>
+
+
+<div class="form-container">
+    <h1>Product Form</h1>
+    <form    [formGroup]="productRegister" (ngSubmit)="savedata()" >
+        <!-- Product ID -->
+        <label for="pid">Product ID</label>
+        <input type="number" formControlName="pid"  required>
+
+        <!-- Product Name -->
+        <label for="pname">Product Name</label>
+        <input type="text" formControlName="pname" required>
+
+        <!-- Product Price -->
+        <label for="pprice">Product Price</label>
+        <input type="number" formControlName="pprice" required>
+
+        <!-- Product Details -->
+        <label for="pdetails">Product Details</label>
+        <textarea id="pdetails" formControlName="pdetails" required></textarea>
+
+        <!-- Product Category -->
+        <label for="pcategory">Product Category</label>
+        <select id="pcategory" formControlName="pcategory" required>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Home Goods">Home Goods</option>
+            <option value="Toys">Toys</option>
+            <option value="Sports">Sports</option>
+        </select>
+
+        <!-- Submit Button -->
+        <input type="submit" >
+    </form>
+
+    
+    

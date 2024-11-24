@@ -1,0 +1,67 @@
+/* General body styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #555;
+}
+
+th {
+    background-color: #444;
+}
+
+td {
+    background-color: #222;
+}
+
+/* Alternate row colors */
+tbody tr:nth-child(even) td {
+    background-color: #333;
+}
+
+/* Hover effect on rows */
+tbody tr:hover {
+    background-color: #555;
+}
+
+/* Style for the Product ID, Product Name, etc. */
+th {
+    font-size: 18px;
+    color: #fff;
+}
+
+td {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Adjust the width of columns if necessary */
+td, th {
+    width: 20%;
+}
